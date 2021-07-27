@@ -1,0 +1,496 @@
+@import '../media/media.css';
+@import '../fonts/stylesheet.css';
+
+:root {
+    --m700: "Montserrat-Bold";
+    --m800: "Montserrat-ExtraBold";
+    --m500: "Montserrat-Medium";
+    --m600: "Montserrat-SemiBold";
+    --r300: "Roboto-Light";
+    --r500: "Roboto-Medium";
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.container {
+    max-width: 1708px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+/* ============== header ============ */
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.header__nav_logo {
+    display: flex;
+    align-items: center;
+    font-family: var(--m700);
+    font-size: 32px;
+    color: #031032;
+}
+.header__nav_logo_img {
+    margin-right: 15px;
+}
+.header__nav {
+    padding: 21px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    
+}
+.header__nav_list {
+    display: flex;
+    justify-content: space-between;
+}
+.header__nav_list_link {
+    color: #031032;
+    margin: 0 15px;
+    font-family: var(--m700);
+    font-size: 18px;
+    
+}
+.header__nav_list_link:hover {
+    border-bottom: 2px solid #031032;
+}
+.header__nav_button {
+    color: #fff;
+    text-transform: uppercase;
+    width: 230px;
+    height: 60px;
+    background: linear-gradient(280.43deg, #001754 30.66%, #031032 77.42%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--m600);
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+}
+
+.header__content {
+    background: url(../img/header__content_bg.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 800px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 148px;
+}
+.header__content_button {
+    color: #031032;
+    background: #fff;
+    border-radius: 46px;
+    padding: 35px 69px;
+    font-family: var(--m600);
+    text-transform: uppercase;
+    display: inline-block;
+    max-width: 351px;
+    line-height: 24px;
+    font-size: 20px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+    
+}
+.header__content_button:hover {
+    color: #fff;
+    background: linear-gradient(280.43deg, #001754 30.66%, #031032 77.42%);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.5));
+}
+.header__content_title {
+    font-family: var(--m800);
+    font-size: 54px;
+    color: #031032;
+    line-height: 66px;
+}
+.header__content_description {
+    font-family: var(--m600);
+    font-size: 34px;
+    color: #031032;
+    max-width: 700px;
+    margin-top: 27px;
+    margin-bottom: 34px;
+    line-height: 41px;
+    
+}
+
+/* ============== /header ============ */
+/* ============== main ============= */
+/* ============== advantages ============ */
+.advantages {
+    padding-bottom: 190px;
+    padding-top: 92px;
+}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages__title {
+    font-family: var(--m800);
+    font-size: 48px;
+    line-height: 59px;
+    color: #031032;
+    text-align: center;
+}
+.advantages__block_card-title {
+    font-family: var(--m800);
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #031032;
+    max-width: 380px;
+    margin-top: 71px;
+}
+.advantages__block_card-title4 {
+    margin-top: 30px;
+}
+.advantages__block_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.advantages__block {
+    margin-top: 205px;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+/* ============== /advantages ============ */
+/* ============== locations =========== */
+.locations {
+    margin-bottom: 65px;
+}
+.locations__title {
+    font-family: var(--m800);
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: #031032;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.locations__maps {
+    min-height: 730px;
+    width: 100%;
+}
+/* ============== /locations =========== */
+/* =============== worker ============= */
+
+.worker__block {
+    background: url(../img/Фон\ представителя.png);
+    width: 100%;
+    min-height: 848px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.worker__title {
+    font-family: var(--m800);
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.92);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.worker__description {
+    font-family: var(--m800);
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.67);
+}
+.worker__quote {
+    font-family: var(--m500);
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 41px;
+    max-width: 1095px;
+}
+.worker__img {
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.74));
+}
+
+/* =============== /worker ============= */
+/* =============== students ============= */
+.students {
+    padding-top: 97px;
+    padding-bottom: 91px;
+}
+.students__block {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.students__card {
+    background: url(../img/Студенты\ Фон.png);
+    width: 540px;
+    min-height: 506px;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    padding: 0 26px;
+    padding-top: 60px;
+    
+}
+.students__card:nth-of-type(2) {
+    background: url(../img/Студенты\ Фон2.png);
+    
+}
+.students__card:nth-of-type(3) {
+    background: url(../img/Студенты\ Фон\ 3.png)
+    
+}
+.students__card_title {
+    font-family: var(--m600);
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.students__card_description {
+    font-family: var(--m500);
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFEEB;
+    margin-top: 10px;
+    
+}
+.students__country {
+    font-family: var(--m700);
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+/* =============== /students ============= */
+/* =============== universities ============ */
+.universities {
+    padding-bottom: 90px;
+    
+}
+.universities__title {
+    font-family: var(--m800);
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: #031032;
+    margin-bottom: 67px;
+    text-align: center;
+}
+.universities__block {
+    display: flex;
+    justify-content: space-between;
+}
+.universities__block_card {
+    max-width: 397px;
+    background: #F4DC03;
+    padding-top: 72px;
+    border-radius: 45px;
+    position: relative;
+    min-height: 693px;
+}
+.universities__block_card-title {
+    font-family: var(--m800);
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    color: #031032;
+    padding: 15px 0px;
+    padding-left: 33px;
+    padding-right: 202px;
+    background: #fff;
+    max-width: 341px;
+
+}
+.universities__block_card-description {
+    font-family: var(--m500);
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    color: #031032;
+    margin-left: 19px;
+    margin-top: 31px;
+
+}
+.universities__block_card-img {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+/* ============== contacts ================ */
+.contacts {
+    padding-bottom: 100px;
+}
+.contacts__title {
+    font-family: var(--m800);
+    font-size: 48px;
+    line-height: 59px;
+    letter-spacing: 0.05em;
+    color: #031032;
+    margin-bottom: 83px;
+    text-align: center;
+}
+.contacts__form_title {
+    font-family: var(--r500);
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    align-self: flex-start;
+    margin-bottom: 30px;
+
+}
+.contacts__form_left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 63px;
+}
+.contacts__block {
+    display: flex;
+}
+.contacts__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.contacts__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacts__form_input:focus {
+    outline: hidden;
+}
+.contacts__form_input {
+    width: 370px;
+    border: none;
+    border-bottom: 1px solid rgba(3, 16, 50, 0.37);
+    padding: 8px 0px;
+    margin: 7px;
+}
+.contacts__form_input::placeholder {
+    font-family: var(--r500);
+    font-size: 18px;
+    line-height: 21px;
+    color: #A2A7B3;
+    
+}
+.contacts__form_textarea:focus {
+    outline: hidden;
+}
+
+.contacts__form_textarea::placeholder {
+    font-family: var(--r500);
+    font-size: 18px;
+    line-height: 21px;
+    color: #A2A7B3;
+    
+}
+.contacts__form_textarea {
+    width: 370px;
+    border: none;
+    border-bottom: 1px solid rgba(3, 16, 50, 0.37);
+    margin-bottom: 25px;
+    height: 120px;
+    
+    
+}
+.contacts__form_right-warning {
+    font-family: var(--m600);
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.contacts__form_button {
+    margin-top: 88px;
+    border: none;
+    background-color: #031032;
+    color: #fff;
+    padding: 24px 50px;
+    font-family: var(--r500);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    box-shadow: 0px 5px 10px #031032;
+    border-radius: 35px;
+
+}
+/* ============== /contacts ================ */
+/* =============== /universities ============ */
+/* ============== /main ============= */
+/* ============= footer ============ */
+.footer {
+    background-color: #031032;
+    padding-top: 60px;
+    padding-bottom: 54px;
+}
+.footer__nav_logo {
+    color: #fff;
+}
+.footer__nav_list_link {
+    color: #fff;
+}
+.footer__nav_button {
+    background: #fff;
+    color: #031032;
+}
+.footer__nav {
+    margin: 0;
+}
+.footer__brands_link {
+    margin: 0 15px;
+    
+}
+.footer__brands {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.footer__description {
+    font-family: var(--r300);
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 42px;
+
+}
+.footer__description > a {
+    color: #fff;
+}
+
+/* ============= /footer ============ */
